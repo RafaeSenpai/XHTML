@@ -1,6 +1,6 @@
 <html> 
     <head>
-        <title>XMTML Aula 4</title>
+        <title>XMTML Aula 17</title>
     </head>
 
     <body style="background-color: gray;">
@@ -11,9 +11,14 @@
         
         <img src="trex.png" alt="Aqui escreve-se um texto alternativo" style="width:200px"/>
         </p>
-        
-        <h1  style="text-align: center;" style="color:blue;">
+        <!-- AQUI É CRIADA A ANCORA TOPO PARA QUE SEJA PARA ESTE LOCAL QUE SE VIRÁ QUANDO CLICAR EM VOLTAR AO TOPO (ESTA INSTRUÇÃO ESTÁ LOCALIZADA NO FINAL DO CODIGO TODO)-->
+        <a id="topo"> 
+            <h1  style="text-align: center;" style="color:blue;">
             conteúdo - TITULO 1 PRINCIPAL</h1>
+        <a id="topo">
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
         <h2  style="text-align: center;" style="color:#FF0000">
             conteúdo - TITULO 2 PRINCIPAL</h2>
         <h3  style="text-align: center;" style="color:rgb(234,200,51)">
@@ -21,6 +26,14 @@
         <h4>conteúdo - TITULO 4 PRINCIPAL</h4>
         <h5>conteúdo - TITULO 5 PRINCIPAL</h5>
         <h6><i>conteúdo</i> - TITULO 6 PRINCIPAL</h6>
+
+
+        <h1>Definições</h1>
+        <ul><!--assim se fazem comentarios em html-->
+            <li><a href="#bcc"> BCC</a></li>
+            <li><a href="#cc"> CC</a></li>
+            <li><a href="aula3.html#bitcoin"> Bitcoin (conteudo existente noutro ficheiro html e nele está devidamente identificada a tag bitcoin)</a></li>
+        </ul>
 
         <p><b>PARAGRAFO 1</b> - <u>Bitcoin is a cryptocurrency</u> and <del>worldwide payment system.</del>[9]:3 It is the first decentralized digital currency, as the system works without a central bank or single administrator.
         9]:1[10] The network is peer-to-peer and transactions take place between users directly, without an intermediary.[9]:4 These transactions are verified by network nodes through 
@@ -89,15 +102,17 @@ Bitcoin was invented by an unknown person or group of people under the name Sato
 
         <h1>Lista de definições</h1>
         <dl>
-            <dt>BCC</dt>
+            <dt><a id= "bcc"> BCC</a></dt>
                 <dd>Sigla utilizada nas aplicações de correio electrónico (Blind Carbon Copy) num dos campos onde se podem intruduzir os endereços dos destinatários da nossa mensagem, com a particularidade de manter em anonimato todos os outros a quem ela foi enviada.</dd>
                 <dd> 2º definição do mesmo termo</dd>
                 
-            <dt>CC</dt>
+            <dt><a id = "cc"> CC</a></dt>
                 <dd>Sigla utilizada nas aplicações de correio electrónico (Carbon Copy) num dos campos onde se podem introduzir os endereços dos destinatários da nossa mensagem. Deve ser utilizado quando se pretende enviar uma cópia da mensagem a uma pessoa diferente do destinatário indicado no campo "para". O destinatário recebe a mensagem com indicação de que foi enviada uma cópia para outra pessoa.</dd>
 
 
         </dl>
+
+        <a href="#topo"> VOltar para cima<a/>
         
         </body>
 </html> 
